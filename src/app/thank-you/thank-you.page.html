@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar class="ion-text-center">
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Setup Prices</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <ion-col size="12">
+    <div class="align-col" style="text-align: center">
+      <img src="/assets/image/callLogo.png" width="20%" />
+    </div>
+  </ion-col>
+  <p style="text-align: center">
+    <b>Set Up Prices for Rides </b>
+  </p>
+  <form [formGroup]="priceForm">
+    <ion-grid>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-list>
+            <!-- <ion-item>
+            <ion-label position="floating">Select Car Type</ion-label>
+
+            <ion-select [(ngModel)]="car_type" multiple="false">
+              <ion-select-option value="Callforide X" selected
+                >Callforide X</ion-select-option
+              >
+              <ion-select-option value="Callforide XL"
+                >Callforide XL</ion-select-option
+              >
+            </ion-select>
+          </ion-item> -->
+
+            <ion-item>
+              <ion-label class="" color="primary" position="stacked"
+                >Enter Car Type</ion-label
+              >
+              <ion-input
+                class="input"
+                type="text"
+                placeholder="Name of Car Type"
+                formControlName="car_type"
+              ></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label class="" color="primary" position="stacked"
+                >Enter Price</ion-label
+              >
+              <ion-input
+                class="input"
+                type="number"
+                placeholder="Enter Only Digit like 2 or 2.1"
+                formControlName="price"
+              ></ion-input>
+            </ion-item>
+          </ion-list>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col size-sm="6" offset-sm="3">
+          <ion-button
+            color="primary"
+            expand="block"
+            (click)="NewPrice()"
+            [disabled]="!priceForm.valid"
+          >
+            Update Price
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </form>
+
+  <!-- EDIT FORM -->
+  <div *ngIf="basic?.length > 0 ">
+    <section class="example-section">
+      <ion-row>
+        <ion-col size="4">Car Type </ion-col>
+        <ion-col size="2">Price</ion-col>
+        <ion-col size="6"></ion-col>
+      </ion-row>
+      <div *ngFor="let data of basic; let i = index">
+        <ion-row>
+          <ion-col size="4"> {{ data.car_type }}</ion-col>
+          <ion-col size="2">{{ data.price }}</ion-col>
+          <ion-col size="6">
+            <ion-button
+              color="primary"
+              expand="block"
+              (click)="UpdatePrice(data)"
+            >
+              Update Price
+            </ion-button></ion-col
+          >
+        </ion-row>
+      </div>
+    </section>
+    <br />
+  </div>
+</ion-content>

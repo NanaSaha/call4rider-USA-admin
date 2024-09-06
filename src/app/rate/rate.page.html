@@ -1,0 +1,57 @@
+<ion-content class="backgroundColor">
+  <div class="driverFound">
+    <div class="ion-padding" class="request-for-ride2">
+      <div class="headSection">
+        <div class="moveHeader">
+          <span style="font-size: 25px; font-weight: 800">
+            <strong>Rate Driver</strong></span
+          >
+        </div>
+      </div>
+
+      <div class="resultContainer">
+        <rating
+          [(ngModel)]="rate"
+          readonly="false"
+          size="default"
+          (ngModelChange)="onRateChange($event)"
+        >
+        </rating>
+
+        <div style="display: inline">
+          <div class="content-wrap">
+            <div class="reviewspace">
+              <span
+                style="font-size: 15px; font-weight: 200; text-align: center"
+              >
+                Write a review</span
+              >
+              <form (ngSubmit)="logForm()">
+                <ion-input
+                  id="myInput"
+                  type="text"
+                  [(ngModel)]="todo.description"
+                  name="description"
+                ></ion-input>
+
+                <ion-row>
+                  <ion-col>
+                    <ion-button
+                      [ngStyle]="{'margin-top': 20 + 'px', 'font-size': 1.1 + 'em'}"
+                      color="dark"
+                      expand="block"
+                      shape="round"
+                      type="submit"
+                    >
+                      SUBMIT
+                    </ion-button>
+                  </ion-col>
+                </ion-row>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ion-content>

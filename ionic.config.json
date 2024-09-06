@@ -1,0 +1,8 @@
+{
+  "name": "callforride3",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

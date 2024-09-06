@@ -1,0 +1,23 @@
+ion-content {
+  .drive {
+    color: rgb(10, 100, 235);
+    // font-family: "Montserrat";
+  }
+
+  .price {
+    color: green;
+  }
+
+  .date {
+    color: orangered;
+  }
+
+  .destination {
+    color: cadetblue;
+  }
+
+  ion-item {
+    margin-top: 24px;
+    border-bottom: 1px solid rgb(216, 216, 216) !important;
+  }
+}

@@ -1,0 +1,99 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-button (click)="goBack()" color="primary">
+      <ion-icon style="font-size: 1.5em" name="arrow-back"></ion-icon>
+      <span style="margin-left: 30px; font-size: 1.4em">Trip History</span>
+    </ion-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="yes-scroll">
+  <div class="followed-items">
+    <ion-list>
+      <div>
+        <ion-item class="ion-item" lines="none" *ngFor="let event of items">
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-label class="drive"
+                  >Driver Name:<strong
+                    >{{event?.driver_name}}</strong
+                  ></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class="drive"
+                  >Rider Name:<strong>{{event?.rider_name}}</strong></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class="price"
+                  >PickUp Address:
+                  <strong>{{event?.startAddress}}</strong></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class="date"
+                  >Destination:
+                  <strong>{{event?.endAddress}}</strong></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class=""
+                  >Fare: <strong>{{event?.fare}}</strong></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class=""
+                  >Status: <strong>{{event?.status}}</strong></ion-label
+                >
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-label class=""
+                  >Date:
+                  <strong
+                    >{{event?.time | date:'mediumDate'}}</strong
+                  ></ion-label
+                >
+              </ion-col>
+            </ion-row>
+
+            <!-- <ion-button
+              class="ion-button"
+              size="large"
+              color="primary"
+              shape="round"
+              expand="block"
+              (click)="goToEventDetail(event.id)"
+            >
+              <ion-icon
+                color="light"
+                name="arrow-round-forward"
+                slot="icon-only"
+              ></ion-icon>
+              More Details
+            </ion-button> -->
+          </ion-grid>
+        </ion-item>
+      </div>
+    </ion-list>
+  </div>
+</ion-content>
+
+<!-- <ion-footer padding>
+  <ion-button color="primary" size="large" shape="round" expand="block">
+    View Cancelled Trips
+  </ion-button>
+</ion-footer> -->

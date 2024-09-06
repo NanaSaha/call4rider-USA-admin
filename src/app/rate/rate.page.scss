@@ -1,0 +1,173 @@
+//NEW DESIGN CSS
+
+.sc-ion-modal-md-h {
+  --width: 86%;
+  --min-width: auto;
+  --max-width: auto;
+  --height: 70% !important;
+  --min-height: auto;
+  --max-height: auto;
+  --overflow: hidden;
+  --border-radius: 0;
+  --border-width: 0;
+  --border-style: none;
+  --border-color: transparent;
+  --background: var(--ion-background-color, #fff);
+  --box-shadow: none;
+}
+
+.inner-scroll {
+  left: 0px;
+  right: 0px;
+  top: calc(var(--offset-top) * -1);
+  bottom: calc(var(--offset-bottom) * -1);
+  padding-left: var(--padding-start);
+  padding-right: var(--padding-end);
+  padding-top: calc(var(--padding-top) + var(--offset-top));
+  padding-bottom: calc(
+    var(--padding-bottom) + var(--keyboard-offset) + var(--offset-bottom)
+  );
+  position: absolute;
+  background: #cf0d0dc7 !important;
+  color: var(--color);
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+// .backgroundColor {
+//   background-color: aqua;
+//   height: 90px;
+// }
+.driverFound {
+  height: 47%;
+  width: 90%;
+  margin-left: 5%;
+  background: white;
+  position: absolute;
+  bottom: 30%;
+  z-index: 1;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}
+
+.request-for-ride2 {
+  height: 200px;
+}
+
+.headSection {
+  background-color: #000000;
+  color: #fbb91d;
+  margin-top: -6%;
+  border-top-left-radius: 27px;
+  border-top-right-radius: 30px;
+  display: inline-block;
+  width: 100%;
+  height: 35%;
+  text-align: center;
+}
+.moveHeader {
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 0%;
+  margin-right: 0%;
+  width: 100%;
+}
+
+.centerText {
+  text-align: center;
+  font-size: 16px !important;
+}
+
+.resultContainer {
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin-top: 16px;
+  margin-bottom: 0px;
+  padding: 10px;
+  text-align: center;
+  // border-bottom: #bababa solid 1px;
+}
+
+.content-wrap,
+.img-wrapper {
+  display: inline-block;
+  //   margin-left: 50px;
+}
+
+#drivericonSize {
+  font-size: 70px !important;
+}
+
+.bookImage,
+.bookTitle,
+.bookPrice {
+  margin-left: 20px;
+}
+
+.resultContainer2 {
+  width: 100%;
+  position: relative;
+  left: 0;
+  margin-top: 0px;
+  margin-bottom: 00px;
+  padding: 10px;
+}
+
+.content-wrap2 {
+  display: inline-block;
+}
+
+.dott {
+  width: 20px;
+  height: 20px;
+}
+
+.centerBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// END NEW DESIGN CSS
+
+ul {
+  padding: 0px;
+  color: rgb(10, 100, 235) !important;
+  &.rating li {
+    padding: 5px 10px !important;
+    background: none;
+    color: rgb(10, 100, 235) !important;
+
+    ion-icon {
+      font-size: 50px;
+    }
+  }
+}
+
+.reviewspace {
+  margin-top: 30%;
+}
+
+// form {
+//   height: 300px auto;
+//   .button {
+//     border-radius: 12px;
+//   }
+// }
+
+// #myInput {
+//   border: 1.5px solid rgb(10, 100, 235);
+//   border-radius: 12px;
+//   height: 100px;
+//   margin-left: 0%;
+//   margin-bottom: 6%;
+//   width: 220px;
+//   margin-top: 17px;
+// }
+
+#myInput {
+  border-bottom: #bababa solid 1px !important;
+}

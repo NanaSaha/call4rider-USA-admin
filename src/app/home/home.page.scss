@@ -1,0 +1,179 @@
+// .titleBg {
+//   background-color: #e6a315;
+// }
+
+// .bjorney {
+//   background-color: #e6a345;
+//   // background-color: hsl(42, 42%, 83%);
+// }
+
+// .map {
+//   position: absolute;
+//   height: 90% !important;
+//   width: 92% !important;
+//   background-color: transparent;
+//   opacity: 0;
+//   transition: opacity 150ms ease-in;
+// }
+
+// .map.visible {
+//   opacity: 1;
+// }
+
+// .setAttention {
+//   font-weight: bolder;
+//   color: red;
+// }
+
+// .mat-step-header .mat-step-icon-selected,
+// .mat-step-header .mat-step-icon-state-done,
+// .mat-step-header .mat-step-icon-state-edit {
+//   background-color: #e6a315 !important;
+//   color: #fff !important;
+// }
+
+// .mat-step-header {
+//   font-size: larger !important;
+// }
+
+// .matLb {
+//   color: rgba(0, 0, 0, 0.87) !important;
+//   font-size: 22px !important;
+// }
+
+// .stepBg {
+//   background-color: #e6a315 !important;
+//   color: #fff !important;
+// }
+
+// ion-icon {
+//   font-size: 30px; //Preferred size here
+// }
+
+// .background {
+//   --background: url(../../assets/image/homebg.png) 0 0/100% 100% no-repeat;
+// }
+
+// .mat-stepper-horizontal,
+// .mat-stepper-vertical {
+//   background-color: transparent !important;
+// }
+
+// .item-native {
+//   width: 450px !important;
+// }
+
+// // #overlay {
+// //   position: fixed;
+// //   /* display: none; */
+// //   width: 100%;
+// //   height: 100%;
+// //   top: 0;
+// //   left: 0;
+// //   right: 0;
+// //   bottom: 0;
+// //   background-color: #00000036;
+// //   z-index: 10;
+// //   cursor: pointer;
+// // }
+
+// .car {
+//   margin: 0 auto;
+//   position: relative;
+//   width: 200px;
+//   animation: moving 10s linear -2s infinite;
+// }
+// .car:before {
+//   content: "";
+//   display: block;
+//   animation: carmove 3.1s infinite linear;
+//   background: url("https://i.stack.imgur.com/xWNOG.png") center/cover;
+//   padding-top: 45.25%;
+// }
+
+// .weel {
+//   animation: wheel 10s infinite -2s linear;
+//   background: url("https://i.stack.imgur.com/0Osjx.png") center/cover;
+//   position: absolute;
+//   bottom: 0.8%;
+//   width: 14.15%;
+// }
+// .weel:before {
+//   content: "";
+//   display: block;
+//   padding-top: 100%;
+// }
+// .weel1 {
+//   left: 14.5%;
+// }
+// .weel2 {
+//   right: 10%;
+// }
+
+// /*animations*/
+// @keyframes carmove {
+//   0% {
+//     transform: translateY(0px);
+//   }
+//   25% {
+//     transform: translateY(1px);
+//   }
+//   29% {
+//     transform: translateY(2px);
+//   }
+//   33% {
+//     transform: translateY(3px);
+//   }
+//   47% {
+//     transform: translateY(0px);
+//   }
+//   58% {
+//     transform: translateY(1px);
+//   }
+//   62% {
+//     transform: translateY(2px);
+//   }
+//   66% {
+//     transform: translateY(3px);
+//   }
+//   75% {
+//     transform: translateY(1px);
+//   }
+//   100% {
+//     transform: translateY(0px);
+//   }
+// }
+
+// @keyframes wheel {
+//   0% {
+//     transform: rotate(0deg);
+//   }
+//   35% {
+//     transform: rotate(-920deg);
+//   }
+//   36%,
+//   56% {
+//     transform: rotate(-920deg);
+//   }
+//   100% {
+//     transform: rotate(-1440deg);
+//   }
+// }
+
+// @keyframes moving {
+//   0% {
+//     right: -80em;
+//     animation-timing-function: ease-out;
+//   }
+//   35% {
+//     right: 0;
+//   }
+//   36%,
+//   56% {
+//     right: 0;
+//     animation-timing-function: ease-in;
+//   }
+//   100% {
+//     right: 120%;
+//   }
+// }
